@@ -20,7 +20,13 @@ public struct ActionButtonStyle: ButtonStyle {
     private let backgroundColor: Color
     private let edgeColor: Color
     private let cornerRadius: CGFloat = 10
-    private let squidge: CGFloat = 1
+    // Universal press feedback: fluidly expand on press instead of dimming.
+    // Mirrors the app design system (see Loop/AICarbEstimation/UI/GlassStyles.swift
+    // and docs/DESIGN_SYSTEM.md); kept as literals here because LoopKitUI can't
+    // import the app target. Full-width buttons use the smaller scale so they
+    // don't clip at the screen edges.
+    private let pressScale: CGFloat = 1.03
+    private let pressAnimation: Animation = .spring(response: 0.28, dampingFraction: 0.62)
 
     @Environment(\.isEnabled) private var isEnabled: Bool
 
@@ -43,17 +49,17 @@ public struct ActionButtonStyle: ButtonStyle {
 
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding(configuration.isPressed ? -squidge : 0)
             .padding()
             .foregroundColor(fontColor)
             .font(.headline)
             .frame(maxWidth: .infinity)
             .background(isEnabled ? backgroundColor : Color(UIColor.lightGray))
-            .overlay(Color(.secondarySystemBackground).opacity(configuration.isPressed ? 0.35 : 0))
             .cornerRadius(cornerRadius)
-            .padding(configuration.isPressed ? squidge : 0)
             .overlay(RoundedRectangle(cornerRadius: cornerRadius)
                 .stroke(edgeColor))
             .contentShape(Rectangle())
+            // Fluidly expand on press (never dim) — shared app-wide feel.
+            .scaleEffect(configuration.isPressed ? pressScale : 1)
+            .animation(pressAnimation, value: configuration.isPressed)
     }
 }

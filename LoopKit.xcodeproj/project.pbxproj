@@ -865,6 +865,13 @@
 		C1FAEC1D264AD6B400A3250B /* DeviceStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FAEC1C264AD6B400A3250B /* DeviceStatusBadge.swift */; };
 		C1FAEC1F264AE12700A3250B /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47ECF8725DC20810024A54D /* UIImage.swift */; };
 		C1FAEC21264AEEA300A3250B /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FAEC20264AEEA300A3250B /* UIImage.swift */; };
+		DD13BC702C3C71A70062313B /* BasalLockEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13BC6F2C3C71A70062313B /* BasalLockEditor.swift */; };
+		DD13BC722C3C74CD0062313B /* PreferencesGuardrailWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD13BC712C3C74CD0062313B /* PreferencesGuardrailWarning.swift */; };
+		DD28B3712B80C074001044D4 /* PreferencesSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD28B3702B80C074001044D4 /* PreferencesSetting.swift */; };
+		DD545A5B2B80ECB900915F95 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD545A5A2B80ECB900915F95 /* PreferencesView.swift */; };
+		DD545A5F2B80EFA900915F95 /* PreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD545A5E2B80EFA900915F95 /* PreferencesViewModel.swift */; };
+		DD545A652B814CA800915F95 /* PreferencesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD545A642B814CA800915F95 /* PreferencesProvider.swift */; };
+		DD545A692B8BCF8E00915F95 /* Guardrail+Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD545A682B8BCF8E00915F95 /* Guardrail+Preferences.swift */; };
 		E9077D2724ACD59F0066A88D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9077D2624ACD59F0066A88D /* InformationView.swift */; };
 		E9077D2A24ACDE2C0066A88D /* CorrectionRangeInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9077D2924ACDE2C0066A88D /* CorrectionRangeInformationView.swift */; };
 		E9086B2924B39EDC0062F5C8 /* ChartsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9086B2824B39EDC0062F5C8 /* ChartsTableViewController.swift */; };
@@ -1790,6 +1797,13 @@
 		C1FAC06228C7B0A100754AE2 /* reservoir_iob_test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reservoir_iob_test.json; sourceTree = "<group>"; };
 		C1FAEC1C264AD6B400A3250B /* DeviceStatusBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceStatusBadge.swift; sourceTree = "<group>"; };
 		C1FAEC20264AEEA300A3250B /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		DD13BC6F2C3C71A70062313B /* BasalLockEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasalLockEditor.swift; sourceTree = "<group>"; };
+		DD13BC712C3C74CD0062313B /* PreferencesGuardrailWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesGuardrailWarning.swift; sourceTree = "<group>"; };
+		DD28B3702B80C074001044D4 /* PreferencesSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSetting.swift; sourceTree = "<group>"; };
+		DD545A5A2B80ECB900915F95 /* PreferencesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		DD545A5E2B80EFA900915F95 /* PreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewModel.swift; sourceTree = "<group>"; };
+		DD545A642B814CA800915F95 /* PreferencesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesProvider.swift; sourceTree = "<group>"; };
+		DD545A682B8BCF8E00915F95 /* Guardrail+Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Guardrail+Preferences.swift"; sourceTree = "<group>"; };
 		E9077D2624ACD59F0066A88D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		E9077D2924ACDE2C0066A88D /* CorrectionRangeInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectionRangeInformationView.swift; sourceTree = "<group>"; };
 		E9086B2824B39EDC0062F5C8 /* ChartsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsTableViewController.swift; sourceTree = "<group>"; };
@@ -2088,6 +2102,7 @@
 		4369F090208B0D68000E3E45 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD545A592B80EC9500915F95 /* Preferences Editors */,
 				B4C004B2241085DB00B40429 /* ActionButton.swift */,
 				89AF78C524482268002B4FCC /* ActionButtonStyle.swift */,
 				C1E4B307242E995200E70CCB /* ActivityIndicator.swift */,
@@ -2258,6 +2273,7 @@
 				C187338229B9486200519CDF /* TimeInterval.swift */,
 				C187339629B9488300519CDF /* TimeZone.swift */,
 				C187339729B9488300519CDF /* UUID.swift */,
+				DD545A682B8BCF8E00915F95 /* Guardrail+Preferences.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2466,6 +2482,8 @@
 				C1814B8B226371DF008D2D8E /* WeakSynchronizedDelegate.swift */,
 				43CACE0D2247F89100F90AF5 /* WeakSynchronizedSet.swift */,
 				B4A2ABEE2AAB5160007E3EC1 /* Pluggable.swift */,
+				DD28B3702B80C074001044D4 /* PreferencesSetting.swift */,
+				DD545A642B814CA800915F95 /* PreferencesProvider.swift */,
 			);
 			path = LoopKit;
 			sourceTree = "<group>";
@@ -2986,6 +3004,7 @@
 				B455F48025FF9A8B000ED456 /* InsulinSensitivityScheduleEditorViewModel.swift */,
 				B455F2A125FBE985000ED456 /* SuspendThresholdEditorViewModel.swift */,
 				1D1FCE2424BD42EF000300A8 /* TherapySettingsViewModel.swift */,
+				DD545A5E2B80EFA900915F95 /* PreferencesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -3110,6 +3129,16 @@
 				C13ACA0B2AC077F000F05D08 /* LoopPredictionOutput.swift */,
 			);
 			path = LoopAlgorithm;
+			sourceTree = "<group>";
+		};
+		DD545A592B80EC9500915F95 /* Preferences Editors */ = {
+			isa = PBXGroup;
+			children = (
+				DD545A5A2B80ECB900915F95 /* PreferencesView.swift */,
+				DD13BC6F2C3C71A70062313B /* BasalLockEditor.swift */,
+				DD13BC712C3C74CD0062313B /* PreferencesGuardrailWarning.swift */,
+			);
+			path = "Preferences Editors";
 			sourceTree = "<group>";
 		};
 		E9077D2824ACD5AA0066A88D /* Information Screens */ = {
@@ -3874,6 +3903,7 @@
 				B4A2AAB1240830A30066563F /* LabeledTextField.swift in Sources */,
 				A9D3FF0B2A6C198C000C891D /* CGPoint.swift in Sources */,
 				B429D66E24BF7255003E1B4A /* UIImage.swift in Sources */,
+				DD13BC722C3C74CD0062313B /* PreferencesGuardrailWarning.swift in Sources */,
 				B46B62A923FF05F8001E69BA /* LabeledNumberInput.swift in Sources */,
 				892155152245C57E009112BC /* SegmentedGaugeBarLayer.swift in Sources */,
 				C1DD512B259FD8A600DE27AE /* InsulinTypeChooser.swift in Sources */,
@@ -3909,6 +3939,7 @@
 				A9D3FF042A6C1944000C891D /* PredictedGlucoseChart.swift in Sources */,
 				C1DE4C2125A253BD007065F8 /* Color.swift in Sources */,
 				898E6E702241EDB70019E459 /* PercentageTextFieldTableViewController.swift in Sources */,
+				DD13BC702C3C71A70062313B /* BasalLockEditor.swift in Sources */,
 				89CAB36D24C9EC98009EE3CE /* Keyboard.swift in Sources */,
 				89186C0724BF7FC70003D0F3 /* Guardrail+UI.swift in Sources */,
 				43FB60E520DCBA02002B996B /* SetupTableViewController.swift in Sources */,
@@ -3959,6 +3990,7 @@
 				B46B62B323FF0E62001E69BA /* SelectableLabel.swift in Sources */,
 				89FC6893245A2D680075CF59 /* ScheduleItemView.swift in Sources */,
 				43BA716F201E49220058961E /* FoodEmojiDataSource.swift in Sources */,
+				DD545A5F2B80EFA900915F95 /* PreferencesViewModel.swift in Sources */,
 				E9077D2724ACD59F0066A88D /* InformationView.swift in Sources */,
 				E94141D024C8F31C0096C326 /* DeliveryLimitsEditor.swift in Sources */,
 				1452F4BA2A85266500F8B9E4 /* CarbQuantityRow.swift in Sources */,
@@ -4022,6 +4054,7 @@
 				43BA717D201EE7090058961E /* GlucoseRangeTableViewCell.swift in Sources */,
 				B455F3A425FF7FF0000ED456 /* CorrectionRangeOverridesEditorViewModel.swift in Sources */,
 				A9D3FF002A6C1944000C891D /* ChartConstants.swift in Sources */,
+				DD545A5B2B80ECB900915F95 /* PreferencesView.swift in Sources */,
 				89BE75CB2464BC2000B145D9 /* AlertContent.swift in Sources */,
 				43BA7184201EE7090058961E /* TextFieldTableViewController.swift in Sources */,
 				1452F4B22A8521CD00F8B9E4 /* TextFieldRow.swift in Sources */,
@@ -4110,6 +4143,7 @@
 				89AE222F228BC68000BDFD85 /* DoseProgressTimerEstimator.swift in Sources */,
 				43D8FDF61C7290350073BE78 /* DailyQuantitySchedule.swift in Sources */,
 				43D8FDF51C7290350073BE78 /* CarbRatioSchedule.swift in Sources */,
+				DD545A652B814CA800915F95 /* PreferencesProvider.swift in Sources */,
 				4322B76F202FA26F0002837D /* GlucoseSampleValue.swift in Sources */,
 				89AE222C228BC66E00BDFD85 /* Locked.swift in Sources */,
 				432CF87120D76D5A0066B889 /* GlucoseDisplayable.swift in Sources */,
@@ -4179,6 +4213,7 @@
 				A93761C125ED670200F6BE43 /* BluetoothProvider.swift in Sources */,
 				433BC7A720523DB7000B1200 /* NewGlucoseSample.swift in Sources */,
 				4322B78E202FA2B30002837D /* InsulinMath.swift in Sources */,
+				DD28B3712B80C074001044D4 /* PreferencesSetting.swift in Sources */,
 				C17F39D023CE34B100FA1113 /* StoredDeviceLogEntry.swift in Sources */,
 				43B17C89208EEC0B00AC27E9 /* HealthStoreUnitCache.swift in Sources */,
 				A912BE29245B9CD500CBE199 /* SettingsObject+CoreDataClass.swift in Sources */,
@@ -4205,6 +4240,7 @@
 				A932803B2798D63B0091D0A1 /* SyncAlertObject.swift in Sources */,
 				1D841AAD24577EE10069DBFF /* AlertSoundPlayer.swift in Sources */,
 				C19E776B2A61FD8A003F06C5 /* RetrospectiveCorrection.swift in Sources */,
+				DD545A692B8BCF8E00915F95 /* Guardrail+Preferences.swift in Sources */,
 				C187339A29B9488300519CDF /* UUID.swift in Sources */,
 				C1CAB9E926A3254800A57273 /* StoredInsulinModel.swift in Sources */,
 				43CACE0E2247F89100F90AF5 /* WeakSynchronizedSet.swift in Sources */,
@@ -4701,7 +4737,7 @@
 		1DEE22FF24A676A300693C32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				INFOPLIST_FILE = LoopKitHostedTests/LoopKitHostedTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4718,7 +4754,7 @@
 		1DEE230024A676A300693C32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				INFOPLIST_FILE = LoopKitHostedTests/LoopKitHostedTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4740,14 +4776,15 @@
 				CODE_SIGN_ENTITLEMENTS = "LoopKit Example/LoopKitExample.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = UY678SP37Q;
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "LoopKit Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.LoopKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nirBregman.LoopKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -4762,14 +4799,15 @@
 				CODE_SIGN_ENTITLEMENTS = "LoopKit Example/LoopKitExample.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = UY678SP37Q;
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "LoopKit Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rileylink.LoopKitExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nirBregman.LoopKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -4785,11 +4823,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 41;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 41;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -4823,11 +4861,11 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 41;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 41;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -4988,11 +5026,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 41;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5022,11 +5059,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 41;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5054,7 +5090,7 @@
 		43D8FDE31C728FDF0073BE78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				INFOPLIST_FILE = LoopKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5070,7 +5106,7 @@
 		43D8FDE41C728FDF0073BE78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				INFOPLIST_FILE = LoopKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5087,8 +5123,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = MockKit/Info.plist;
@@ -5119,11 +5156,11 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5151,8 +5188,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MockKit/Info.plist;
@@ -5175,9 +5213,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MockKit/Info.plist;
@@ -5199,8 +5238,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MockKitUI/Info.plist;
@@ -5225,9 +5265,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MockKitUI/Info.plist;
@@ -5252,10 +5293,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 41;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5285,10 +5326,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 41;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -5317,6 +5358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = MockKitTests/Info.plist;
@@ -5330,6 +5372,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 62ZMFH6S36;
 				INFOPLIST_FILE = MockKitTests/Info.plist;
 				PRODUCT_NAME = MockKitTests;
 				SWIFT_EMIT_LOC_STRINGS = NO;

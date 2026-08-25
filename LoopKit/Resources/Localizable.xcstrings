@@ -2006,6 +2006,12 @@
         }
       }
     },
+    "Basal Lock" : {
+      "comment" : "Title text for basal lock setting"
+    },
+    "Basal Lock prevents the basal rate from being throttled if the blood glucose is above a certain level." : {
+      "comment" : "Descriptive text for basal lock (1: app name)"
+    },
     "Basal Rates" : {
       "comment" : "Title text for basal rates",
       "localizations" : {
@@ -10204,6 +10210,9 @@
         }
       }
     },
+    "Please note that this value is outside of the recommended range." : {
+      "comment" : "Descriptive text for saving settings outside the recommended range for basal lock"
+    },
     "Please re-enable sharing in Health" : {
       "comment" : "The error recovery suggestion when Health sharing was denied",
       "extractionState" : "manual",
@@ -11951,6 +11960,9 @@
         }
       }
     },
+    "The value you have entered for Basal Lock is outside of the recommended range." : {
+      "comment" : "Descriptive text for guardrail outside value warning for basal lock"
+    },
     "The value you have entered is higher than what is typically recommended for most people." : {
       "comment" : "Descriptive text for guardrail high value warning",
       "localizations" : {
@@ -12094,6 +12106,9 @@
         }
       }
     },
+    "The value you have entered is higher than what is typically recommended." : {
+      "comment" : "Descriptive text for guardrail high value warning for basal lock"
+    },
     "The value you have entered is lower than what is typically recommended for most people." : {
       "comment" : "Descriptive text for guardrail low value warning",
       "localizations" : {
@@ -12236,6 +12251,9 @@
           }
         }
       }
+    },
+    "The value you have entered is lower than what is typically recommended." : {
+      "comment" : "Descriptive text for guardrail low value warning for basal lock"
     },
     "The values you have entered are outside of what is typically recommended for most people." : {
       "comment" : "Descriptive text for guardrail high value warning",
