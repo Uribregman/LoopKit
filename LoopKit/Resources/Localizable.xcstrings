@@ -1926,6 +1926,12 @@
             "value" : "Basale"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basal"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "new",
@@ -2224,6 +2230,12 @@
             "value" : "Bolo"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bolus"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2370,7 +2382,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Karb forhold"
+            "value" : "Karbohydratforhold"
           }
         },
         "nb-NO" : {
@@ -2748,7 +2760,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "没有权限"
+            "value" : "授权被拒绝"
           }
         }
       }
@@ -8745,7 +8757,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "毫摩尔/升"
+            "value" : "mmol/L"
           }
         }
       }
@@ -11594,6 +11606,12 @@
             "value" : "Basale temporanea"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Midlertidig basal"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12455,6 +12473,12 @@
             "value" : "U"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12590,6 +12614,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "U/ora"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E/t"
           }
         },
         "nb-NO" : {
