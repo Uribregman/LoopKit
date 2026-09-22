@@ -16,6 +16,12 @@ public protocol TherapySettingsViewModelDelegate: AnyObject {
     func syncDeliveryLimits(deliveryLimits: DeliveryLimits, completion: @escaping (Result<DeliveryLimits, Error>) -> Void)
     func saveCompletion(therapySettings: TherapySettings)
     func pumpSupportedIncrements() -> PumpSupportedIncrements?
+    func updateCurrentProfileName()
+}
+
+// Profiles: delegates that don't upload settings (e.g. onboarding) don't need to do anything.
+public extension TherapySettingsViewModelDelegate {
+    func updateCurrentProfileName() {}
 }
 
 public class TherapySettingsViewModel: ObservableObject {
@@ -26,7 +32,7 @@ public class TherapySettingsViewModel: ObservableObject {
     let adultChildInsulinModelSelectionEnabled: Bool
     public var prescription: Prescription?
 
-    private weak var delegate: TherapySettingsViewModelDelegate?
+    private(set) weak var delegate: TherapySettingsViewModelDelegate?
     
     public init(therapySettings: TherapySettings,
                 pumpSupportedIncrements: (() -> PumpSupportedIncrements?)? = nil,

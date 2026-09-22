@@ -32,12 +32,30 @@ public struct TherapySettingsView: View {
         
     private let actionButton: ActionButton?
 
+    /// Set when this screen edits a saved profile instead of Loop's live settings:
+    /// the title is the profile's name, `header` is shown first, and the Profiles,
+    /// Insulin Model and Support sections are left out.
+    private let profileTitle: String?
+    private let profileHeader: AnyView?
+
+    private var isProfileEditor: Bool { profileTitle != nil }
+
     public init(mode: SettingsPresentationMode,
                 viewModel: TherapySettingsViewModel,
                 actionButton: ActionButton? = nil) {
         self.mode = mode
         self.viewModel = viewModel
         self.actionButton = actionButton
+        self.profileTitle = nil
+        self.profileHeader = nil
+    }
+
+    init(profileTitle: String, viewModel: TherapySettingsViewModel, header: AnyView) {
+        self.mode = .settings
+        self.viewModel = viewModel
+        self.actionButton = nil
+        self.profileTitle = profileTitle
+        self.profileHeader = header
     }
         
     public var body: some View {
@@ -49,14 +67,14 @@ public struct TherapySettingsView: View {
     }
 
     private var therapySettingsTitle: String {
-        return LocalizedString("Therapy Settings", comment: "Therapy Settings screen title")
+        return profileTitle ?? LocalizedString("Therapy Settings", comment: "Therapy Settings screen title")
     }
 
     private var cardListSections: [CardListSection] {
         var cardListSections: [CardListSection] = []
 
         cardListSections.append(therapySettingsCardListSection)
-        if mode == .settings {
+        if mode == .settings && !isProfileEditor {
             cardListSections.append(supportCardListSection)
         }
 
@@ -80,6 +98,12 @@ public struct TherapySettingsView: View {
                 cards.append(summaryHeaderSection)
             }
         }
+        if let profileHeader {
+            cards.append(Card { profileHeader })
+        } else if mode == .settings {
+            // Profiles sit on the main Therapy Settings screen, above the settings they save and load.
+            cards.append(profilesSection)
+        }
         cards.append(suspendThresholdSection)
         cards.append(correctionRangeSection)
         cards.append(preMealCorrectionRangeSection)
@@ -89,7 +113,7 @@ public struct TherapySettingsView: View {
         cards.append(carbRatioSection)
         cards.append(basalRatesSection)
         cards.append(deliveryLimitsSection)
-        if viewModel.adultChildInsulinModelSelectionEnabled {
+        if viewModel.adultChildInsulinModelSelectionEnabled && !isProfileEditor {
             cards.append(insulinModelSection)
         }
         cards.append(insulinSensitivitiesSection)
@@ -174,6 +198,12 @@ extension TherapySettingsView {
         return String(format: LocalizedString("Submitted by %1$@, %2$@", comment: "Format for prescription descriptive text (1: providerName, 2: datePrescribed)"),
                       prescription.providerName,
                       DateFormatter.localizedString(from: prescription.datePrescribed, dateStyle: .short, timeStyle: .none))
+    }
+
+    private var profilesSection: Card {
+        Card {
+            TherapyProfilesSection(therapySettingsViewModel: viewModel)
+        }
     }
 
     private var suspendThresholdSection: Card {
