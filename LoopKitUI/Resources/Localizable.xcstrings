@@ -1005,6 +1005,9 @@
         }
       }
     },
+    "“%@” is the profile Loop is using. Your change is saved to the profile; Loop keeps its current values until you use it." : {
+      "comment" : "Message when the active profile was edited (1: name)"
+    },
     "%@" : {
       "localizations" : {
         "ar" : {
@@ -1288,6 +1291,9 @@
           }
         }
       }
+    },
+    "%@, active profile" : {
+      "comment" : "Accessibility label of the active profile row (1: name)"
     },
     "%@." : {
       "comment" : "Appends a full-stop to a statement",
@@ -4337,6 +4343,9 @@
         }
       }
     },
+    "A profile with this name already exists. Replace it with your current settings?" : {
+      "comment" : "Message when saving over an existing profile"
+    },
     "A value of 0 U/hr means you will be scheduled to receive no basal insulin." : {
       "comment" : "Warning text for basal rate of 0 U/hr",
       "localizations" : {
@@ -4629,6 +4638,9 @@
         }
       }
     },
+    "Active" : {
+      "comment" : "Pill on the active profile"
+    },
     "Active Duration" : {
       "comment" : "The text for the override history duration",
       "localizations" : {
@@ -4771,6 +4783,9 @@
           }
         }
       }
+    },
+    "Active Profile" : {
+      "comment" : "Disabled load button on the active profile"
     },
     "Activity" : {
       "comment" : "The title for the custom preset emoji activity section",
@@ -5810,6 +5825,9 @@
         }
       }
     },
+    "Authenticate to load this profile's therapy settings" : {
+      "comment" : "Authentication hint string for loading a profile"
+    },
     "Authenticate to save therapy setting" : {
       "comment" : "Authentication hint string for therapy settings",
       "localizations" : {
@@ -6714,7 +6732,7 @@
       }
     },
     "Cancel" : {
-      "comment" : "Button text to cancel adding a new schedule item\nCancel editing settings button title\nThe text for the scheduled custom preset cancel button\nThe title of the cancel action in an action sheet",
+      "comment" : "Button text to cancel adding a new schedule item\nCancel button title\nCancel editing settings button title\nThe text for the scheduled custom preset cancel button\nThe title of the cancel action in an action sheet",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -9689,6 +9707,12 @@
         }
       }
     },
+    "Couldn't Load Profile" : {
+      "comment" : "Title when loading a profile fails"
+    },
+    "Couldn't Save Profile" : {
+      "comment" : "Title when saving a profile fails"
+    },
     "Custom" : {
       "comment" : "The text for a custom preset\nTitle for custom override history cell",
       "localizations" : {
@@ -10281,7 +10305,7 @@
       }
     },
     "Delete" : {
-      "comment" : "Delete values for Pre-Meal, inactivates Pre-Meal icon\nTest for table cell delete button\nThe title of the button to remove the credentials for a service",
+      "comment" : "Delete button title\nDelete values for Pre-Meal, inactivates Pre-Meal icon\nTest for table cell delete button\nThe title of the button to remove the credentials for a service",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -10422,6 +10446,9 @@
           }
         }
       }
+    },
+    "Delete “%@”?" : {
+      "comment" : "Title when deleting a profile (1: name)"
     },
     "Delete Account" : {
       "comment" : "The title of the button to remove the credentials for a service",
@@ -11903,6 +11930,9 @@
           }
         }
       }
+    },
+    "Edited" : {
+      "comment" : "Pill on the active profile when settings changed since it was loaded"
     },
     "Editing affects only the active override. The default settings of %@ will not be affected." : {
       "comment" : "Footer text for editing an active override (1: preset name)",
@@ -16979,6 +17009,21 @@
         }
       }
     },
+    "Later" : {
+      "comment" : "Keep the edit for the next load"
+    },
+    "Load" : {
+      "comment" : "Button that loads a profile"
+    },
+    "Load “%@”?" : {
+      "comment" : "Title of the load profile confirmation (1: name)"
+    },
+    "Load Profile" : {
+      "comment" : "Button that loads a profile"
+    },
+    "Loop starts using these settings right away." : {
+      "comment" : "Message of the load profile confirmation"
+    },
     "Low Basal Rate" : {
       "comment" : "Title text for the low basal rate warning",
       "localizations" : {
@@ -19454,6 +19499,9 @@
         }
       }
     },
+    "More" : {
+      "comment" : "Accessibility label of the profile actions menu"
+    },
     "More Info" : {
       "comment" : "Alert action title to open error help",
       "localizations" : {
@@ -19603,8 +19651,14 @@
         }
       }
     },
+    "Move Down" : {
+      "comment" : "Move a profile down the list"
+    },
+    "Move Up" : {
+      "comment" : "Move a profile up the list"
+    },
     "Name" : {
-      "comment" : "The text for the custom preset name setting",
+      "comment" : "Placeholder for a profile name\nThe text for the custom preset name setting",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -20050,6 +20104,9 @@
         }
       }
     },
+    "New Profile" : {
+      "comment" : "Title of the alert that names a new profile"
+    },
     "No Basal Insulin" : {
       "comment" : "Title text for the zero basal rate warning",
       "localizations" : {
@@ -20338,6 +20395,9 @@
     "Off" : {
       "comment" : "A label for when basal lock is disabled.",
       "isCommentAutoGenerated" : true
+    },
+    "OK" : {
+      "comment" : "OK button title"
     },
     "Other" : {
       "comment" : "Section title for no-carb food\nThe title for custom preset emoji miscellaneous section",
@@ -21813,6 +21873,9 @@
         }
       }
     },
+    "Profiles" : {
+      "comment" : "Title of the profiles card in Therapy Settings"
+    },
     "Progressing." : {
       "comment" : "Accessibility label for ProgressIndicatorView when showIndeterminantProgress",
       "localizations" : {
@@ -22545,6 +22608,18 @@
           }
         }
       }
+    },
+    "Rename" : {
+      "comment" : "Rename button title"
+    },
+    "Rename Profile" : {
+      "comment" : "Title of the rename profile alert"
+    },
+    "Replace" : {
+      "comment" : "Button that overwrites an existing profile"
+    },
+    "Replace “%@”?" : {
+      "comment" : "Title when saving over an existing profile (1: name)"
     },
     "Required" : {
       "comment" : "The default placeholder string for a credential",
@@ -23726,6 +23801,12 @@
         }
       }
     },
+    "Save all of the therapy settings below under a name, and switch between them for different routines." : {
+      "comment" : "Description of profiles in Therapy Settings"
+    },
+    "Save as New Profile" : {
+      "comment" : "Button that saves the current therapy settings as a profile"
+    },
     "Save Basal Lock Threshold?" : {
       "comment" : "Alert title for confirming a basal lock threshold outside the recommended range"
     },
@@ -24872,6 +24953,12 @@
           }
         }
       }
+    },
+    "Saved by an older version: the Glucose Safety Limit, Pre-Meal Range and Delivery Limits below are your current ones. Tap a setting to change it in this profile — nothing changes in Loop until you load it." : {
+      "comment" : "Profile detail text for a profile saved before profiles held every setting"
+    },
+    "Saves all of your current therapy settings below under this name." : {
+      "comment" : "Message of the alert that names a new profile"
     },
     "Saving..." : {
       "comment" : "The button text during saving on a configuration page",
@@ -27064,6 +27151,9 @@
           }
         }
       }
+    },
+    "Tap a setting to change it in this profile. Nothing changes in Loop until you load it." : {
+      "comment" : "Profile detail text explaining editing and loading"
     },
     "Tap back to continue exploring the rest of the %@ interface." : {
       "localizations" : {
@@ -29395,6 +29485,12 @@
           }
         }
       }
+    },
+    "These settings no longer match “%@”." : {
+      "comment" : "Notice when therapy settings were edited after loading a profile (1: name)"
+    },
+    "This is the profile Loop is using now. Tap a setting to change it in this profile." : {
+      "comment" : "Profile detail text for the active profile"
     },
     "This model assumes peak insulin activity at 19 minutes." : {
       "comment" : "Subtitle of afrezza preset",
@@ -32129,6 +32225,15 @@
         }
       }
     },
+    "Update “%@”" : {
+      "comment" : "Button that saves the current settings into the active profile (1: name)"
+    },
+    "Use Now" : {
+      "comment" : "Apply the edited active profile now"
+    },
+    "Use the New Values Now?" : {
+      "comment" : "Title when the active profile was edited"
+    },
     "Value" : {
       "comment" : "Placeholder text until value is entered",
       "localizations" : {
@@ -34590,6 +34695,9 @@
           }
         }
       }
+    },
+    "Your current therapy settings don't change." : {
+      "comment" : "Message when deleting a profile"
     },
     "your Glucose Safety Limit" : {
       "comment" : "Lower bound pre-meal information text",
