@@ -2102,7 +2102,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Basaalsnelheden"
+            "value" : "Basaalstanden"
           }
         },
         "pl" : {
@@ -2694,7 +2694,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Autorisatie Geweigerd"
+            "value" : "Autorisatie geweigerd"
           }
         },
         "pl" : {
@@ -3726,7 +3726,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kritieke Update"
+            "value" : "Kritieke update"
           }
         },
         "pl" : {
@@ -4030,7 +4030,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apparaat Geweigerd"
+            "value" : "Apparaat geweigerd"
           }
         },
         "pl" : {
@@ -7093,7 +7093,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ongeldige Configuratie"
+            "value" : "Ongeldige configuratie"
           }
         },
         "pl" : {
@@ -7815,7 +7815,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Maximale Basaalsnelheid"
+            "value" : "Maximale basaalstand"
           }
         },
         "pl" : {
@@ -7958,7 +7958,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Maximale Basaalsnelheid is de maximale tijdelijke basaalsnelheid die %1$@ mag instellen."
+            "value" : "Maximale basaalstand is de maximale tijdelijke basaalstand die %1$@ mag instellen."
           }
         },
         "pl" : {
@@ -8107,7 +8107,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Maximale Bolus"
+            "value" : "Maximale bolus"
           }
         },
         "pl" : {
@@ -8250,7 +8250,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Maximale Bolus is de hoogste bolushoeveelheid die je in één keer kunt toedienen om koolhydraten te dekken of om een hoge glucose te verlagen."
+            "value" : "Maximale bolus is de hoogste bolushoeveelheid die je in één keer kunt toedienen om koolhydraten te dekken of om een hoge glucose te verlagen."
           }
         },
         "pl" : {
@@ -9132,7 +9132,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aandacht Nodig"
+            "value" : "Aandacht nodig"
           }
         },
         "pl" : {
@@ -9275,7 +9275,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Geen Update"
+            "value" : "Geen update"
           }
         },
         "pl" : {
@@ -10008,7 +10008,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ok"
+            "value" : "OK"
           }
         },
         "pl" : {
@@ -10447,7 +10447,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pre-Meal"
+            "value" : "Voorafgaand aan maaltijd"
           }
         },
         "pl" : {
@@ -10590,7 +10590,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aanbevolen Update"
+            "value" : "Aanbevolen update"
           }
         },
         "pl" : {
@@ -12774,7 +12774,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Toediening Onzeker"
+            "value" : "Toediening onzeker"
           }
         },
         "pl" : {
@@ -13513,7 +13513,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Update Beschikbaar"
+            "value" : "Update beschikbaar"
           }
         },
         "pl" : {
@@ -13662,7 +13662,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Training"
+            "value" : "Training/Sport"
           }
         },
         "pl" : {
@@ -14091,7 +14091,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Je Insulinegevoeligheid is de daling van de glucose verwacht van één eenheid insuline."
+            "value" : "Je insulinegevoeligheid is de daling van de glucose verwacht van één eenheid insuline."
           }
         },
         "pl" : {
